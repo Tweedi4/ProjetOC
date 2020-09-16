@@ -1,55 +1,130 @@
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
 :link {
   text-decoration: none;  
 }
-.navlist {
-    display: flex;
+
+.nav ul
+{
+    margin: 0;
+	background: white;
     list-style: none;
+
+}
+
+.nav a {   
+
+    display: flex;
+    padding: 30px 52px;
+    text-align: justify;
+    align-content: right;
+    text-decoration: none;
+	color: #0065FC;
+    font-size: 16px;
+}
+
+.nav .menu
+{
+    display: flex;
+    flex-direction: row;
     justify-content: flex-end;
 }
 
-.navbar li a {
-    float: none;
-    display: block;
-    color: #0065FC;
-    padding-block-start: 30px;
-    padding-right: 57px;
-    margin: 0;
-    text-align: center;
-    align-content: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    position: relative;
+.nav a:hover {
+    color:  black;
+    border-top: 3px solid #0065FC;   
 }
-.navbar a:hover {
-    color:  #0065FC;    
-}
-.navbar a:active {
-    border-top: 3px solid #0065FC;
-}
-.logo {
-    float: left;
-    position: fixed;
+
+.logo { 
+    text-align: justify;
+    justify-content: center;
     padding: 30px 52px;
+    position: absolute;
 }
 
 section {
     padding: 50px 52px;
-}
-body {
-    background-color: white;
-    font-family: 'Raleway', sans-serif;
+    position: relative;
 }
 
 h2 p {
     color: black;
 }
 
-.searchbar {
-    width: 100%;
+.fa-lg {
+    font-size: 1.33em;
+}
+
+.map_icon {
+    display: flex;
+    align-items: center;
+    padding-right: 18px;
+}
+
+
+
+.search_bar {
+    width: 25%;
+    padding-left: 20px;
+    border-radius: 16px;
+    background-color:#F2F2F2;
+    display: flex;
+    text-align:center;
     position: relative;
+}
+
+.searchterm {    
+    width: 237px;
+    height: 48px;
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 18px;
+    color: black;
+    background-color: white;
+
+}
+
+.searchbutton {
+width: 200px;
+background-color: #0065FC;
+color: white;
+font-size: 18px;
+border: none;
+border-top-right-radius: 16px;
+border-bottom-right-radius: 16px;
+}
+
+.filters {
+display: flex;
+align-items: center;
+
+}
+
+.filter_list {
     display: flex;
 }
 
-.searchterm {
-    color: black;
+.filter_list li {
+    list-style: none;
+    padding: 0px 20px;
+}
+
+
+.list_container {
+    width: 160px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 25px;
+    display: flex;
+    box-sizing: content-box;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+    padding: 0px 25px;
 }
