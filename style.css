@@ -208,6 +208,7 @@ p {
 }
 
 .plus_populaires {
+    width: 30%;
     border-top-left-radius: 18px;
     border-bottom-left-radius: 18px;
 }
