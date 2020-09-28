@@ -178,6 +178,8 @@ p {
     background-color: #F2F2F2;
 }
 
+
+
 .heberg_container {
     display: flex;
     flex-wrap: wrap;
@@ -185,13 +187,23 @@ p {
 
 
 .image_box {
-  width: 20%;
-  border: none;
+  height: 210px;
+  width: 280px;
   border-radius: 18px;
   background-color: white;
   padding: 5px;
+  overflow: hidden;
+  position: relative;
 }
 
+.legende_hebergement {
+    z-index: 100;
+    position: absolute;
+    bottom: 0;
+    height: 35%;
+    width: 100%;
+    background-color: white;
+}
 
 
 .pictures {
@@ -207,8 +219,72 @@ p {
     background-color: #F2F2F2;
 }
 
+.pop_heberg {
+    width: 330px;
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 18px;
+
+}
+
 .plus_populaires {
-    width: 30%;
-    border-top-left-radius: 18px;
-    border-bottom-left-radius: 18px;
+    width: 100%;
+    position: relative;
+    bottom: 40px;
+    right: 50px;    
+}
+
+.legende_pop {
+    z-index: 100;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: white;
+    width: 60%;
+}
+
+
+.activites_container {
+    display: flex;  
+}
+
+.activites_marseille {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.activ_photos {
+    width: 300px;
+    height: 448px;
+    overflow: hidden;
+    position: relative;
+    top: 30px;
+    border: 1px solid#F2F2F2;
+    box-shadow: #F2F2F2;
+    border-radius: 18px;
+}
+
+.legende_activites {
+    z-index: 100;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 10%;
+    bottom:0;
+    padding: 20px;
+
+}
+
+.marseille_activ {
+    width:300px;
+    height: 235px;
+    overflow: hidden;
+    position: relative;
+    top:30px;
+    border: 1px solid #F2F2F2;
+    box-shadow: #F2F2F2;
+    border-radius: 18px;
 }
