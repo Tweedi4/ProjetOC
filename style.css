@@ -69,20 +69,27 @@ li {
          padding: 0px 25px;
        }
        
-       .nav .menu
-       {
-         display: flex;
-         flex-direction: row-reverse;
-         flex-basis: content;
-         justify-content: center;
-         overflow: auto;
-       }
-        
+
  }
 
 /*Tablet - Recherche et filtres*/
 
 @media screen and (min-width: 768px) {
+
+    .logo { 
+        height: 60px;
+        padding-bottom: 80px;
+      }
+
+      .nav .menu
+      {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        flex-basis: content;
+        justify-content: center;
+        overflow: auto;
+      }
 
 
 
@@ -149,6 +156,12 @@ p {
     border-bottom-right-radius: 16px;
 }
 
+
+.fa-search {
+    display: none;
+}
+
+
 .filters {
     display: flex;
     flex-wrap: wrap;
@@ -172,7 +185,7 @@ p {
     padding: 0px 20px;
 }
 
-.filter_list li:hover {
+.filter_list li:hover a {
     color: #0065FC;
 }
 
@@ -236,9 +249,12 @@ p {
     section {
     padding: 0px 0px;
     }
+
     h2 {
     padding: 0px 20px;
+    text-align: left;
     }
+
     
     p {
     padding: 0px 20px;
@@ -249,9 +265,13 @@ p {
     margin: 10px;
     }
     
+    .filters {
+        flex-direction: column;
+    }
+
     .filter_list {
         display:flex;
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
 
@@ -260,19 +280,91 @@ p {
     padding: 10px 10px;
     }
     
+    
+    li {
+        width: 110px;
+    }
+
+
+    a {
+        width: 70px;
+    }
+
+
+    #list_familial {
+        width: 110px;
+    }
+
+    #list_economique {
+        width: 120px ;
+    }
+
     .information {
-        display: flex;
-        align-items: center;
-        justify-content: center; 
-        margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 10px;
     }   
 
 
 
 }
 
+/* Tablet - Section 1 */
+
+@media screen and (min-width: 768px) {
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .hebergement_style {
+        left: 0;
+    }
+
+    .filter_list {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .filter_list li {
+        list-style: none;
+        padding: 10px 10px;
+        }
+        
+    
+    li {
+        width: 220px;
+        
+    }
+
+
+
+    #list_familial {
+        width: auto;
+    }
+
+    #list_economique {
+        width:auto;
+    }
+    .information {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        margin: 10px;
+        }   
+
+
+}
+
+
+
 
 /*Section 2 Hebergements et plus populaires*/
+
+
+
 
 .heberg_pop {
     display: flex;
@@ -300,6 +392,7 @@ figure {
 
 a {
     color: black;
+    font-size: 15px;
 }
 
 .image_box {
@@ -409,13 +502,14 @@ h3 {
 /*Mobile - Section 2 Hebergements et plus populaires*/
 @media screen and (max-width: 768px) {
 
-    
+
+
     .hebergements_box {
         width: 100%;
         background-color: white;
         padding-top: 20px;
       }
-
+    
     #populaires_container {
         width: 100%;
         border-radius: 0;
@@ -437,13 +531,27 @@ h3 {
         align-items: center;
     }
 
+    a {
+        width: 70px;
+    }
 }
 
 /*Tablet - Section 2 Hebergements et plus populaires*/
 
 @media screen and (min-width: 768px) {
-
-
+    .heb__style {
+        margin: 10px;
+    }
+    .fa-chart-line {
+        margin: 20px;
+        justify-content: center;
+    }
+    .wrapping, .heberg_pop {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+      }
 
 }
 
@@ -533,45 +641,52 @@ h3 {
 @media screen and (max-width: 768px) {
 
 
-.Activites {
-
+    .Activites {
+        
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: flex-start;   
-}
+    justify-content: center;   
+    }
 
-.activites_container {
+    .activites_container {
     width: fit-content;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-content: center; 
+    }
 
-}
+    .marseille_position, .activites_marseille {
+    width: 280px;
+    height:auto;
+    margin-right: 20px;
+    justify-content: center;
+    
+    }
 
-.marseille_position, .activites_marseille {
-    width: 16%;
-    min-width:330px;
-    height:250px;
-}
+    .activ_photos, .img_marseille {
+    width: 280px;
+    height: 190px;
+    margin-right: 20px;
+    justify-content: center;
+    }
 
-.activ_photos, .img_marseille {
-    margin: 0;
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-
-.image_position {
+    
+    .image_position {
     bottom: 100px;
 
-}
+    }
 
-.img_marseille img {
+    .img_marseille img {
     bottom: 180px;
-}
+    align-items: center;
+    }
 
+    .img_marseille {
+    width: 280px;
+    height: 190px;
+    }
 
 }
 
@@ -579,7 +694,53 @@ h3 {
 
 @media screen and (min-width: 768px) {
 
-
+    .Activites {
+        
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;   
+        }
+    
+    .activites_container {
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center; 
+        }
+        
+    .marseille_position, .activites_marseille {
+        width: 280px;
+        height:auto;
+        margin-right: 20px;
+        justify-content: center;
+        
+        }
+    
+        .activ_photos, .img_marseille {
+        width: 280px;
+        height: 190px;
+        margin-right: 20px;
+        justify-content: center;
+        }
+    
+        
+        .image_position {
+        bottom: 100px;
+    
+        }
+    
+        .img_marseille img {
+        bottom: 180px;
+        align-items: center;
+        }
+    
+        .img_marseille {
+        width: 280px;
+        height: 190px;
+        }
+    
 
 
 
@@ -637,5 +798,14 @@ h3 {
 /*Tablet - Footer*/
 
 @media screen and (min-width: 768px) {
+    .footer_wrap {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
 
+    .footer_column {
+        width: 33%;
+    }
 }
