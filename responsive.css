@@ -1,0 +1,342 @@
+/*Mobile*/
+
+@media screen and (max-width: 768px) {
+    
+    header {
+        flex-direction: column;
+    }
+
+    .logo { 
+        height: 50px;
+        margin: 0px;
+        align-items: baseline;
+    }
+
+    section {
+    padding: 0px 0px;
+    }
+
+    h2 {
+    padding: 0px 20px;
+    text-align: left;
+    }
+
+    
+    p {
+    padding: 0px 20px;
+
+    }
+    .nav {
+        width: 150px;
+    }
+    .nav ul {
+        padding-left: 0;
+    }
+    .nav a {
+        width: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav .menu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav a:hover {
+        color:  #0065FC;
+        border-top: none;
+        border-bottom: 3px solid #0065FC;   
+    }
+
+
+
+    #inscription {
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
+
+    #inscription:hover {
+        border-bottom: none;
+    }
+
+    
+    .search_bar {
+    margin: 10px;
+    }
+
+    .fa-search {
+        display: initial;
+    }
+
+    .search {
+        display: none;
+    }
+
+    
+    .filters {
+        flex-direction: column;
+    }
+
+    .filter_list {
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+
+    .filter_list li {
+    list-style: none;
+    padding: 10px 10px;
+    }
+
+    a {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    
+
+
+    #list_familial {
+        width: 110px;
+    }
+
+    #list_economique {
+        width: 120px ;
+    }
+
+    .information {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 10px;
+    }   
+    .hebergements_box {
+        width: 100%;
+        background-color: white;
+        padding-top: 20px;
+        margin-right: 0;
+      }
+    
+    #populaires_container {
+        width: 100%;
+        border-radius: 0;
+        
+      }
+      .plus_populaires {
+        display: flex;
+        bottom: 20px;
+        right: 70px;    
+    }
+    .wrapping, .heberg_pop {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+
+      }
+
+      .legende_texte {
+        width: 100%;
+        align-items: center;
+    }
+        .Activites {
+        
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;   
+        }
+    
+        .activites_container {
+        width: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center; 
+        }
+    
+        .marseille_position, .activites_marseille {
+        width: 280px;
+        height:190px;
+        margin-right: 20px;
+        justify-content: center;
+        
+        }
+    
+        .activ_photos, .img_marseille {
+        width: 280px;
+        height: 190px;
+        margin-right: 20px;
+        }
+
+        .marseille_position img {
+            width: 300px;
+        }
+       
+        .img_marseille img {
+        bottom: 180px;
+        align-items: center;
+        justify-content: center;
+        }
+    
+        .img_marseille {
+        width: 280px;
+        height: 190px;
+        }
+        .footer_wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        }
+    
+        .footer_column {
+        width: 100%;
+        }
+
+        figure {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+
+
+}
+
+
+/*Tablet*/
+
+@media screen and (max-width: 1024px) {
+    
+
+      .logo { 
+        height: 60px;
+        padding: 0;
+        margin: 0;
+      }
+
+      .nav .menu
+      {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        flex-basis: content;
+        justify-content: center;
+        overflow: auto;
+      }
+
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .hebergement_style {
+        left: 0;
+    }
+
+    .filter_list {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .filter_list li {
+        list-style: none;
+        padding: 10px 10px;
+        }
+        
+
+
+    #list_familial {
+        width: fit-content;
+    }
+
+    #list_economique {
+        width:auto;
+    }
+    .information {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        margin: 10px;
+        }
+    .heb__style {
+        margin: 10px;
+        }
+    .fa-chart-line {
+        margin: 20px;
+        justify-content: center;
+        }
+    .wrapping, .heberg_pop {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+          }
+          
+    .Activites {
+        
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;   
+    }
+        
+        .activites_container {
+            width: auto;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center; 
+            }
+            
+        .marseille_position, .activites_marseille {
+            width: 280px;
+            height:auto;
+            margin-right: 20px;
+            justify-content: center;
+            
+            }
+        
+            .activ_photos, .img_marseille {
+            width: 280px;
+            height: 190px;
+            margin-right: 20px;
+            justify-content: center;
+            }
+        
+            
+            .image_position {
+            bottom: 100px;
+        
+            }
+        
+            .img_marseille img {
+            bottom: 180px;
+            align-items: center;
+            }
+        
+            .img_marseille {
+            width: 280px;
+            height: 190px;
+            }
+
+            .footer_wrap {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        
+            .footer_column {
+                width: 100%;
+            }
+        
+        
+        
+
+
+}
+
