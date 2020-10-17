@@ -3,13 +3,19 @@
 @media screen and (max-width: 768px) {
     
     header {
-        flex-direction: column;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     }
 
+
     .logo { 
-        height: 50px;
-        margin: 0px;
-        align-items: baseline;
+        position: absolute;
+        left : 20px; 
+        top : 20px;
+        vertical-align: baseline;
     }
 
     section {
@@ -17,8 +23,10 @@
     }
 
     h2 {
-    padding: 0px 20px;
-    text-align: left;
+    padding: 0px 10px;
+    text-align: start;
+    justify-content: center;
+    font-size: 22px;
     }
 
     
@@ -27,18 +35,26 @@
 
     }
     .nav {
-        width: 150px;
+        width: 100%;
     }
+
     .nav ul {
         padding-left: 0;
     }
+
+
     .nav a {
-        width: 40px;
-        flex-wrap: wrap;
+        width: 55px;
         justify-content: center;
+        align-content: space-between;
+        flex-wrap: nowrap;
+        position: relative;
+        top: 40px;
     }
 
+
     .nav .menu {
+        height: 200px;
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -50,12 +66,17 @@
         border-bottom: 3px solid #0065FC;   
     }
 
+    #hebergements_btn, #activites_btn {
+        height: 0;
+    }
+
 
 
     #inscription {
+        width: 30px;
         position: absolute;
         top: 0;
-        right: 10px;
+        right: 0;
     }
 
     #inscription:hover {
@@ -83,29 +104,29 @@
     .filter_list {
         display:flex;
         flex-wrap: wrap;
+        justify-content: center;
+        padding:0;
     }
 
 
     .filter_list li {
     list-style: none;
     padding: 10px 10px;
-    }
-
-    a {
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
     
+    }
 
+    .texte_lien {
+        justify-content: center;
+        margin: auto;
+    }
 
     #list_familial {
-        width: 110px;
+        width: 120px;
     }
 
     #list_economique {
-        width: 120px ;
+        width: 10px;
+           
     }
 
     .information {
@@ -113,13 +134,38 @@
     align-items: center;
     justify-content: center; 
     margin: 10px;
-    }   
+    }  
+    
+    .heberg_pop {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+
     .hebergements_box {
         width: 100%;
         background-color: white;
         padding-top: 20px;
         margin-right: 0;
       }
+
+
+    .image_box {
+        width: 300px;
+        height:150px;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 18px;
+        border: 5px solid white;
+        background-color: white;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    figure {
+        box-shadow: 2px 2px 2px 2px #e3e3e3;
+    }
     
     #populaires_container {
         width: 100%;
@@ -135,7 +181,6 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column-reverse;
-
       }
 
       .legende_texte {
@@ -156,12 +201,14 @@
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: center; 
+        align-content: center;
+        align-items: center;
         }
     
         .marseille_position, .activites_marseille {
         width: 280px;
         height:190px;
-        margin-right: 20px;
+        margin-right: 0;
         justify-content: center;
         
         }
@@ -169,7 +216,8 @@
         .activ_photos, .img_marseille {
         width: 280px;
         height: 190px;
-        margin-right: 20px;
+        margin-right: 0;
+        justify-content: center;
         }
 
         .marseille_position img {
@@ -185,7 +233,10 @@
         .img_marseille {
         width: 280px;
         height: 190px;
+        align-items: center;
+        justify-content: center;
         }
+
         .footer_wrap {
         display: flex;
         flex-direction: column;
@@ -202,7 +253,25 @@
             margin-right: 0;
         }
 
+        .pictures {
+            position: relative;
+            bottom:100px;
+            
+        }
+        #hotel_mer {
+            bottom: 180px;
+        }
 
+        #amina {
+            bottom: 250px;
+        }
+
+
+        #vieuxport {
+            position: relative;
+            bottom: 240px;
+            object-fit: contain;
+        }
 
 }
 
@@ -212,22 +281,27 @@
 @media screen and (max-width: 1024px) {
     
 
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
       .logo { 
         height: 60px;
         padding: 0;
         margin: 0;
       }
-
-      .nav .menu
-      {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        flex-basis: content;
+      
+      .nav .menu {
+        width: 100%;
         justify-content: center;
-        overflow: auto;
       }
 
+    #hebergements_btn, #activites_btn {
+        height: auto;
+    }
 
     .filters {
         flex-direction: column;
@@ -237,10 +311,13 @@
         left: 0;
     }
 
+  
+
     .filter_list {
         display:flex;
         flex-wrap: wrap;
         justify-content: center;
+        
     }
 
     .filter_list li {
@@ -273,7 +350,7 @@
     .wrapping, .heberg_pop {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
+        flex-direction: column-reverse;
         justify-content: center;
           }
           
@@ -296,7 +373,7 @@
         .marseille_position, .activites_marseille {
             width: 280px;
             height:auto;
-            margin-right: 20px;
+            margin-right: 0;
             justify-content: center;
             
             }
@@ -304,8 +381,8 @@
             .activ_photos, .img_marseille {
             width: 280px;
             height: 190px;
-            margin-right: 20px;
-            justify-content: center;
+            margin-right: 0;
+            justify-content: start
             }
         
             
@@ -322,6 +399,7 @@
             .img_marseille {
             width: 280px;
             height: 190px;
+            object-fit: contain;
             }
 
             .footer_wrap {
